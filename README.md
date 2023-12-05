@@ -6,7 +6,7 @@ The project is a simple database connection user application for PostgreSQL data
 
 ## Project Setup Steps
 
-# There are a few notes before setting up this project
+### There are a few notes before setting up this project
 1. The walkthrough of setting up this project will be using Visual Studio 2022 Preview
 2. It's highly recommended that you have PgAdmin installed to set up some test databases to work with this example
 3. Node will also be required in order to set up the React and Next.js frontend of this application.
@@ -18,35 +18,35 @@ The project is a simple database connection user application for PostgreSQL data
    - git clone https://github.com/Tuck1297/AspireWithNextJS.git
 2. **Install NuGet Packages**
 Install the following NuGet Packages under AspireWithNextJS.WebAPI project:
-        - AutoMapper (12.0.1)
-        - Azure.AI.OpenAI (1.0.0-beta.9)
-        - BCrypt.Net-Next (4.0.3)
-        - Dapper (2.1.24)
-        - Microsoft.AspNetCore.Authentication.JwtBearer (8.0.0)
-        - Microsoft.AspNetCore.Identity.EntityFrameworkCore (8.0.0)
-        - Microsoft.AspNetCore.OpenApi (8.0.0)
-        - Microsoft.AspNetCore.SpaProxy (8.0.0)
-        - Microsoft.DotNet.Interactive.AIUtilities (1.0.0-beta.23562.1)
-        - Microsoft.EntityFrameworkCore.Design (8.0.0)
-        - Microsoft.EntityFrameworkCore.Tools (8.0.0)
-        - Microsoft.IdentityModel.Tokens (7.0.3)
-        - Microsoft.VisualStudio.Azure.Containers.Tools.Targets (1.19.6-Preview.1)
-        - Newtonsoft.Json (13.0.3)
-        - Npgsql.EntityFrameworkCore.PostgreSQL (8.0.0)
-        - Swashbuckle.AspNetCore (6.4.0)
-        - System.IdentityModel.Tokens.JWT (7.0.3)
+        * AutoMapper (12.0.1)
+        * Azure.AI.OpenAI (1.0.0-beta.9)
+        * BCrypt.Net-Next (4.0.3)
+        * Dapper (2.1.24)
+        * Microsoft.AspNetCore.Authentication.JwtBearer (8.0.0)
+        * Microsoft.AspNetCore.Identity.EntityFrameworkCore (8.0.0)
+        * Microsoft.AspNetCore.OpenApi (8.0.0)
+        * Microsoft.AspNetCore.SpaProxy (8.0.0)
+        * Microsoft.DotNet.Interactive.AIUtilities (1.0.0-beta.23562.1)
+        * Microsoft.EntityFrameworkCore.Design (8.0.0)
+        * Microsoft.EntityFrameworkCore.Tools (8.0.0)
+        * Microsoft.IdentityModel.Tokens (7.0.3)
+        * Microsoft.VisualStudio.Azure.Containers.Tools.Targets (1.19.6-Preview.1)
+        * Newtonsoft.Json (13.0.3)
+        * Npgsql.EntityFrameworkCore.PostgreSQL (8.0.0)
+        * Swashbuckle.AspNetCore (6.4.0)
+        * System.IdentityModel.Tokens.JWT (7.0.3)
 
 3. **Create Local Databases in PgAdmin**
         Create three local databases in PgAdmin with the following names: HackathonDB, SupplyChain, and WebsiteInfo. Remember the connection credentials for all three of these databases.
 
 4. **Update Environment Variables**
         Update the following variables in the AspireWithNextJS.WebAPI appsettings.json file:
-            - DbString with connection details for HackathonDB database
-            - SupplyChainConnection with connection details for SupplyChain database
-            - WebsiteInfoConnection with connection details for WebsiteInfo database
-            - OpenAIKey with key to Azure OpenAI
-            - OpenAIProxyURL with proxy URL to Azure OpenAI
-            - OpenAIDeploymentName to gpt-3.5-turbo
+            * DbString with connection details for HackathonDB database
+            * SupplyChainConnection with connection details for SupplyChain database
+            * WebsiteInfoConnection with connection details for WebsiteInfo database
+            * OpenAIKey with key to Azure OpenAI
+            * OpenAIProxyURL with proxy URL to Azure OpenAI
+            * OpenAIDeploymentName to gpt-3.5-turbo
 
     The database connection strings should be formatted like the following:
     ```"host=localhost; database=HackathonDB; port=5432; user id=postgres; password=123456;"```
@@ -79,7 +79,7 @@ Install the following NuGet Packages under AspireWithNextJS.WebAPI project:
 11. **AI Summarizing Tool**
         Find the AI summarizing tool at the bottom of the page when viewing data in a particular table.
 
-Pages Summary
+## Pages Summary
 
 Here are the following pages to the front end of this application:
 
@@ -92,7 +92,7 @@ Here are the following pages to the front end of this application:
     Admin Tools: Accessible only for Admin accounts to manage users in the system.
     Logout: Button to log out and remove HttpOnly refresh and session tokens from the browser's cookies.
 
-Features of the Application
+## Features of the Application
 
     1. Role-based user accounts.
     2. HttpOnly JWT authentication and refresh tokens implementation.
