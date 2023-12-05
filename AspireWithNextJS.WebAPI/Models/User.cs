@@ -1,6 +1,6 @@
 ﻿using System;
 
-namespace ReactWithASP.Server.Models
+namespace AspireWithNextJS.WebAPI.Models
 {
     public class User
     {

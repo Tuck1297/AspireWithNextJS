@@ -1,8 +1,8 @@
 ﻿using Microsoft.EntityFrameworkCore;
 using Newtonsoft.Json;
-using ReactWithASP.Server.Models.TestDbs.SupplyChain;
+using AspireWithNextJS.WebAPI.Models.TestDbs.SupplyChain;
 
-namespace ReactWithASP.Server.Data
+namespace AspireWithNextJS.WebAPI.Data
 {
     public class SupplyChainContext : DbContext
     {

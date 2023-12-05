@@ -1,4 +1,4 @@
-﻿namespace ReactWithASP.Server.Models.TestDbs.SupplyChain
+﻿namespace AspireWithNextJS.WebAPI.Models.TestDbs.SupplyChain
 {
     public class Products
     {

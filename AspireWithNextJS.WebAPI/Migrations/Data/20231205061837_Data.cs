@@ -5,10 +5,10 @@ using Microsoft.EntityFrameworkCore.Migrations;
 
 #pragma warning disable CA1814 // Prefer jagged arrays over multidimensional
 
-namespace ReactWithASP.Server.Migrations.Data
+namespace AspireWithNextJS.WebAPI.Migrations.Data
 {
     /// <inheritdoc />
-    public partial class InitialApiContext : Migration
+    public partial class Data : Migration
     {
         /// <inheritdoc />
         protected override void Up(MigrationBuilder migrationBuilder)
@@ -71,8 +71,8 @@ namespace ReactWithASP.Server.Migrations.Data
                 columns: new[] { "UserId", "Email", "PasswordHash", "RefreshToken", "TokenCreated", "TokenExpires" },
                 values: new object[,]
                 {
-                    { new Guid("d63f0ca3-e25d-4583-9354-57f110538a55"), "test2hackathon.com", "$2a$11$uramN.Jwempnqmbt.T/aVeHnWiShr9VtcP3qC3mY5Y2eD2bBuiPYW", "4LlQcMOp/jizlaolyy029YtgVsEFAnQ9iYnd0MHIlDyJca53XNwbLVGzeSe9XkFFBjcUqGs5t1TQzyDeE/7J/A==", new DateTime(2023, 12, 2, 2, 16, 44, 948, DateTimeKind.Utc).AddTicks(1797), new DateTime(2023, 12, 2, 2, 46, 44, 948, DateTimeKind.Utc).AddTicks(1789) },
-                    { new Guid("d63f0ca3-e25d-4583-9354-57f110538f45"), "test1@hackathon.com", "$2a$11$q1udDZHzUH2s37H.WNEmVupM/0siYeHWWJ.zYIS40r34mDGV1kd0i", "J19S5PwCdOsc152kT2T0r9Hx5WEBKTo6rNbm3GVTGAwdAsDfvGQcOHzxBe+qt7ls8S1SlyvT5VtFWUKKquAfMQ==", new DateTime(2023, 12, 2, 2, 16, 44, 848, DateTimeKind.Utc).AddTicks(696), new DateTime(2023, 12, 2, 2, 46, 44, 848, DateTimeKind.Utc).AddTicks(691) }
+                    { new Guid("d63f0ca3-e25d-4583-9354-57f110538a55"), "test2hackathon.com", "$2a$11$E8B8qV/3bS6lcEYZgVMbWuyjFvoterdAKPqf/STj0ujQ1yYFSTQY2", "5MPNbnyAhUZGr7uBWAFlRSLRWKMMg7+e1zNH5fs/4I31B1YxAwLZiFxKNFlGZctBeKgoUo4fyuqRZw875dRIoA==", new DateTime(2023, 12, 5, 6, 18, 37, 240, DateTimeKind.Utc).AddTicks(9584), new DateTime(2023, 12, 5, 6, 48, 37, 240, DateTimeKind.Utc).AddTicks(9578) },
+                    { new Guid("d63f0ca3-e25d-4583-9354-57f110538f45"), "test1@hackathon.com", "$2a$11$pGTOlU2xtRRKU0QgpWRIH.PmW6/arjo6cd2C9tzsUbZDGinjSrxXm", "IPa8wYK5nA8jjR5UbU4WUNNNkjBCpLHyfCYKzElOEB55vYixePRlPyFN8grrS4NgQkK5s/yZcnxI8zbALRqdoA==", new DateTime(2023, 12, 5, 6, 18, 37, 141, DateTimeKind.Utc).AddTicks(785), new DateTime(2023, 12, 5, 6, 48, 37, 141, DateTimeKind.Utc).AddTicks(778) }
                 });
 
             migrationBuilder.InsertData(
@@ -89,8 +89,8 @@ namespace ReactWithASP.Server.Migrations.Data
                 columns: new[] { "Id", "UserId", "currentTableInteracting", "dbConnectionString", "dbName", "dbType" },
                 values: new object[,]
                 {
-                    { new Guid("3740e256-5da4-454b-aac9-51a45eaac97a"), new Guid("d63f0ca3-e25d-4583-9354-57f110538f45"), "", "host=127.0.0.1; database=WebsiteInfo; port=5420; user id=postgres; password=123456;", "WebsiteInfo", "Postgres" },
-                    { new Guid("8e2a76d6-a6d2-4fcf-a742-b878a5da2b83"), new Guid("d63f0ca3-e25d-4583-9354-57f110538f45"), "", "host=127.0.0.1; database=SupplyChain; port=5420; user id=postgres; password=123456;", "SupplyChain", "Postgres" }
+                    { new Guid("4ffd0817-a0f5-48bb-b723-40cf88b7c673"), new Guid("d63f0ca3-e25d-4583-9354-57f110538f45"), "", "host=127.0.0.1; database=WebsiteInfo; port=5420; user id=postgres; password=123456;", "WebsiteInfo", "Postgres" },
+                    { new Guid("ed46eec9-e94c-41e4-b2d9-089b1b171beb"), new Guid("d63f0ca3-e25d-4583-9354-57f110538f45"), "", "host=127.0.0.1; database=SupplyChain; port=5420; user id=postgres; password=123456;", "SupplyChain", "Postgres" }
                 });
 
             migrationBuilder.CreateIndex(

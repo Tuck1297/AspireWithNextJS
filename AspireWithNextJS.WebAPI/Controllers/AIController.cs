@@ -4,9 +4,8 @@ using AutoMapper;
 using Microsoft.AspNetCore.Authorization;
 using Microsoft.AspNetCore.Mvc;
 using Npgsql;
-using ReactWithASP.Server.Helpers;
-using ReactWithASP.Server.Models;
-using ReactWithASP.Server.Services;
+using AspireWithNextJS.WebAPI.Helpers;
+using AspireWithNextJS.WebAPI.Models;
 
 namespace AspireWithNextJS.WebAPI.Controllers
 {

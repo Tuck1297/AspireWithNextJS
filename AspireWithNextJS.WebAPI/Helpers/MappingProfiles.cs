@@ -1,9 +1,9 @@
 ﻿using AutoMapper;
-using ReactWithASP.Server.Models;
-using ReactWithASP.Server.Models.InputModels;
-using ReactWithASP.Server.Models.OutputModels;
+using AspireWithNextJS.WebAPI.Models;
+using AspireWithNextJS.WebAPI.Models.InputModels;
+using AspireWithNextJS.WebAPI.Models.OutputModels;
 
-namespace ReactWithASP.Server.Helpers
+namespace AspireWithNextJS.WebAPI.Helpers
 {
     public class MappingProfiles : Profile
     {

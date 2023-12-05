@@ -1,7 +1,7 @@
 ﻿using Microsoft.IdentityModel.Tokens;
-using ReactWithASP.Server.Data;
-using ReactWithASP.Server.Models;
-using ReactWithASP.Server.Models.InputModels;
+using AspireWithNextJS.WebAPI.Data;
+using AspireWithNextJS.WebAPI.Models;
+using AspireWithNextJS.WebAPI.Models.InputModels;
 using System.IdentityModel.Tokens.Jwt;
 using System.Reflection.Emit;
 using System.Security.Claims;
@@ -9,7 +9,7 @@ using System.Security.Cryptography;
 using System.Text;
 using BC = BCrypt.Net.BCrypt;
 
-namespace ReactWithASP.Server.Services
+namespace AspireWithNextJS.WebAPI.Services
 {
     public class AuthServices
     {

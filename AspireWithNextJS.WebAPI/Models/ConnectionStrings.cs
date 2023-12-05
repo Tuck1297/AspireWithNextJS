@@ -1,6 +1,6 @@
 ﻿using Microsoft.EntityFrameworkCore;
 
-namespace ReactWithASP.Server.Models
+namespace AspireWithNextJS.WebAPI.Models
 {
     public class ConnectionStrings
     {

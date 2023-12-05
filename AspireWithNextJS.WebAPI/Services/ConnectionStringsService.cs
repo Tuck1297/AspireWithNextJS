@@ -1,10 +1,10 @@
 ﻿using AutoMapper;
-using ReactWithASP.Server.Data;
-using ReactWithASP.Server.Models;
-using ReactWithASP.Server.Models.InputModels;
-using ReactWithASP.Server.Models.OutputModels;
+using AspireWithNextJS.WebAPI.Data;
+using AspireWithNextJS.WebAPI.Models;
+using AspireWithNextJS.WebAPI.Models.InputModels;
+using AspireWithNextJS.WebAPI.Models.OutputModels;
 
-namespace ReactWithASP.Server.Services
+namespace AspireWithNextJS.WebAPI.Services
 {
     public class ConnectionStringsService
     {

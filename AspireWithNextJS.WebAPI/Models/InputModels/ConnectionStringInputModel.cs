@@ -1,6 +1,6 @@
 ﻿using System.ComponentModel.DataAnnotations;
 
-namespace ReactWithASP.Server.Models.InputModels
+namespace AspireWithNextJS.WebAPI.Models.InputModels
 {
     public class ConnectionStringInputModel
     {

@@ -5,7 +5,7 @@ using System.Collections.Generic;
 using System.Data;
 using System.Threading.Tasks;
 
-namespace ReactWithASP.Server.Helpers
+namespace AspireWithNextJS.WebAPI.Helpers
 {
 
     public class DbExecutor : IDisposable

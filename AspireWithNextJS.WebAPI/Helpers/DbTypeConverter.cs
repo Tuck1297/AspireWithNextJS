@@ -1,7 +1,7 @@
 ﻿using Newtonsoft.Json.Linq;
 using NpgsqlTypes;
 
-namespace ReactWithASP.Server.Helpers
+namespace AspireWithNextJS.WebAPI.Helpers
 {
     public class DbTypeConverter
     {

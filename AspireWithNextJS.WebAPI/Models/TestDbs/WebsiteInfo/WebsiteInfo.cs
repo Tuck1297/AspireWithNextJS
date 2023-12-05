@@ -1,4 +1,4 @@
-﻿namespace ReactWithASP.Server.Models.TestDbs.WebsiteInfo
+﻿namespace AspireWithNextJS.WebAPI.Models.TestDbs.WebsiteInfo
 {
     public class WebsiteInfo
     {

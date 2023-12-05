@@ -4,9 +4,9 @@ using Microsoft.AspNetCore.Mvc;
 using Newtonsoft.Json.Linq;
 using Npgsql;
 using NpgsqlTypes;
-using ReactWithASP.Server.Helpers;
-using ReactWithASP.Server.Models;
-using ReactWithASP.Server.Services;
+using AspireWithNextJS.WebAPI.Helpers;
+using AspireWithNextJS.WebAPI.Models;
+using AspireWithNextJS.WebAPI.Services;
 
 /*
  * All that would need to be done to extend this controller
@@ -16,7 +16,7 @@ using ReactWithASP.Server.Services;
  * each controller instance that directs to appropriate class.
  */
 
-namespace ReactWithASP.Server.Controllers
+namespace AspireWithNextJS.WebAPI.Controllers
 {
     [ApiController]
     [Route("external")]

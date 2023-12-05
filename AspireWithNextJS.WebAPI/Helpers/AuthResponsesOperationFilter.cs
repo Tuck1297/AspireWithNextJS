@@ -2,7 +2,7 @@
 using Microsoft.OpenApi.Models;
 using Swashbuckle.AspNetCore.SwaggerGen;
 
-namespace ReactWithASP.Server.Helpers
+namespace AspireWithNextJS.WebAPI.Helpers
 {
     public class AuthResponsesOperationFilter : IOperationFilter
     {

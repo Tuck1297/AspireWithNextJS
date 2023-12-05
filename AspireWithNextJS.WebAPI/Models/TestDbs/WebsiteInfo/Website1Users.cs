@@ -1,4 +1,4 @@
-﻿namespace ReactWithASP.Server.Models.TestDbs.WebsiteUsers
+﻿namespace AspireWithNextJS.WebAPI.Models.TestDbs.WebsiteUsers
 {
     public class Website1Users
     {

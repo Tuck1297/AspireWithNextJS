@@ -1,10 +1,10 @@
 ﻿using Microsoft.EntityFrameworkCore;
 using Newtonsoft.Json;
-using ReactWithASP.Server.Models.TestDbs.SupplyChain;
-using ReactWithASP.Server.Models.TestDbs.WebsiteInfo;
-using ReactWithASP.Server.Models.TestDbs.WebsiteUsers;
+using AspireWithNextJS.WebAPI.Models.TestDbs.SupplyChain;
+using AspireWithNextJS.WebAPI.Models.TestDbs.WebsiteInfo;
+using AspireWithNextJS.WebAPI.Models.TestDbs.WebsiteUsers;
 
-namespace ReactWithASP.Server.Data
+namespace AspireWithNextJS.WebAPI.Data
 {
     public class WebsiteContext : DbContext
     {

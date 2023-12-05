@@ -1,12 +1,12 @@
 ﻿using AutoMapper;
 using Microsoft.AspNetCore.Authorization;
 using Microsoft.AspNetCore.Mvc;
-using ReactWithASP.Server.Models.InputModels;
-using ReactWithASP.Server.Models;
-using ReactWithASP.Server.Services;
+using AspireWithNextJS.WebAPI.Models.InputModels;
+using AspireWithNextJS.WebAPI.Models;
+using AspireWithNextJS.WebAPI.Services;
 using System.Security.Claims;
 
-namespace ReactWithASP.Server.Controllers
+namespace AspireWithNextJS.WebAPI.Controllers
 {
     [ApiController]
     [Route("cs")]

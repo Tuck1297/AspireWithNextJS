@@ -1,14 +1,13 @@
 ﻿using Microsoft.EntityFrameworkCore;
-using ReactWithASP.Server.Models;
-using ReactWithASP.Server.Services;
+using AspireWithNextJS.WebAPI.Models;
 using System.Security.Cryptography;
 using BC = BCrypt.Net.BCrypt;
 
-namespace ReactWithASP.Server.Data
+namespace AspireWithNextJS.WebAPI.Data
 {
     public class DataContext : DbContext
     {
-        public DataContext(DbContextOptions<DataContext> options) :base(options)
+        public DataContext(DbContextOptions<DataContext> options) : base(options)
         {
             
         }

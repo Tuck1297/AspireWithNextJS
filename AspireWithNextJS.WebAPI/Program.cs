@@ -1,14 +1,10 @@
 using AspireWithNextJS.WebAPI.Services;
 using AutoMapper;
-using Azure.AI.OpenAI;
 using Microsoft.AspNetCore.Mvc;
 using Microsoft.EntityFrameworkCore;
-using Microsoft.Extensions.Azure;
-using Microsoft.Extensions.Configuration;
 using Microsoft.OpenApi.Models;
-using ReactWithASP.Server.Data;
-using ReactWithASP.Server.Helpers;
-using ReactWithASP.Server.Services;
+using AspireWithNextJS.WebAPI.Data;
+using AspireWithNextJS.WebAPI.Helpers;
 using System.Security.Claims;
 
 var builder = WebApplication.CreateBuilder(args);
@@ -44,38 +40,14 @@ System.Environment.SetEnvironmentVariable("OpenAIKey", OpenAIKey.Value);
 System.Environment.SetEnvironmentVariable("OpenAIProxyUrl", OpenAIProxyURL.Value);
 System.Environment.SetEnvironmentVariable("OpenAIDeploymentName", OpenAIDeploymentName.Value);
 
-var val = OpenAIKey;
-var val2 = OpenAIProxyURL;
-var val3 = OpenAIDeploymentName;
 // Add db context
 var dbConnection = builder.Configuration.GetConnectionString("DbString");
 var dbConnection2 = builder.Configuration.GetConnectionString("SupplyChainConnection");
 var dbConnection3 = builder.Configuration.GetConnectionString("WebsiteInfoConnection");
 
-builder.Services.AddDbContext<DataContext>(options =>
-{
-    if (dbConnection != null)
-    {
-        options.UseNpgsql(dbConnection);
-    }
-});
-
-
-builder.Services.AddDbContext<SupplyChainContext>(options =>
-{
-    if (dbConnection != null)
-    {
-        options.UseNpgsql(dbConnection2);
-    }
-});
-
-builder.Services.AddDbContext<WebsiteContext>(options =>
-{
-    if (dbConnection != null)
-    {
-        options.UseNpgsql(dbConnection3);
-    }
-});
+builder.Services.AddDbContext<DataContext>(options => options.UseNpgsql(dbConnection));
+builder.Services.AddDbContext<SupplyChainContext>(options => options.UseNpgsql(dbConnection2));
+builder.Services.AddDbContext<WebsiteContext>(options => options.UseNpgsql(dbConnection3));
 
 builder.Services.AddAuthentication().AddCookie("default", o =>
 {
@@ -87,7 +59,6 @@ builder.Services.AddAuthentication().AddCookie("default", o =>
     o.Cookie.SameSite = SameSiteMode.Lax;
     o.ExpireTimeSpan = TimeSpan.FromMinutes(15);
     o.SlidingExpiration = true;
-
 });
 
 builder.Services.AddAuthorization(builder =>

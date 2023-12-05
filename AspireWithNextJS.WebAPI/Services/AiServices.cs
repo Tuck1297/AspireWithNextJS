@@ -18,8 +18,6 @@ namespace AspireWithNextJS.WebAPI.Services
             var key = Environment.GetEnvironmentVariable("OpenAIKey");;
             var proxyUrl = Environment.GetEnvironmentVariable("OpenAIProxyUrl");
             var openAIDeploymentName = Environment.GetEnvironmentVariable("OpenAIDeploymentName");
-            //"gpt-3.5-turbo" <-- for general chats
-            //"text-embedding-ada-002" <-- for embedding information
 
             Uri proxyUri = new(proxyUrl);
 
@@ -33,14 +31,14 @@ namespace AspireWithNextJS.WebAPI.Services
                 {
                     new ChatMessage(ChatRole.System, "You are a helpful assistant that assists in analyzing and reviewing data to provide input and help answer questions."),
                     new ChatMessage(ChatRole.User, $""""""
-                        Use the below provided data retrieved from a database to assist the user in answering given questions and provide a summary of the data. 
+                        Use the below provided data retrieved from a database to assist the user in answering questions given to you. Also provide an overall summary of the data. 
                         If the question does not make sense or the answer cannot be found, write "I don't know."
                         Data from Database in JSON format:
                         """
                         {jsonString}
                         """
-                        Initial Prompt: Provide a summary of the given data. Share with me the overall topic of what the information focuses on as well as any analytical perspectives you can provide. 
-                        Share also the key-value pairs that exist in the data and answer any additional information provided in the prompt below.
+                        Initial Prompt: Provide a summary of the given data. Share with me the overall topic of what the information focuses. 
+                        Share also the key-value pairs that exist in the data and answer any additional questions provided in the prompt below. 
                         Prompt from user: {prompt}
                         """"""
                         ),
