@@ -1,8 +1,8 @@
-# Project Name
+# AspireWithNextJS
 
-## Intro
+## About the project
 
-The project is a simple database connection user application for PostgreSQL databases. It allows users to connect their PostgreSQL database in the cloud for easy and quick access without the need to download any software one's computer. This is an initial concept project built in participation of the 2023 Microsoft .NET Hackathon and therefore will have some features left out for brevity reasons such as encrypting personal data before storing it in the database.
+The project is a simple database connection user application for PostgreSQL databases. It allows users to connect their PostgreSQL database in the cloud for easy and quick access without the need to download any software to one's computer. This is an initial concept project built in participation of the 2023 Microsoft .NET Hackathon and therefore will have some features left out for brevity reasons such as encrypting personal data before storing it in the database. The primary technologies used include Aspire .NET 8 for the api and backend development and React with NextJS for frontend development.
 
 ## Project Setup Steps
 
@@ -100,3 +100,17 @@ Here are the following pages to the front end of this application:
     5. AI data summarizer providing summaries of data and additional insights.
     6. Frontend built with Next.js and React.js.
     7. All forms include validation logic to prevent invalid data from hitting the API endpoints.
+
+## Youtube resources that I watched in development of this project
+1. [Hack Togeather .NET The Great .NET 8 Hack - Your Stack for Building Cloud Native Apps] (https://www.youtube.com/live/5IjKH-gy2Y0?si=hs1Xt77L4VC1Yxlj)
+2.[ Hack Togeather .NET The Great .NET 8 Hack - Generative AI for the .NET Developer] (https://www.youtube.com/live/zENu82HwwGI?si=G68tVRZsDHnAwh86)
+3.[ Building Cloud Native apps with .NET 8 | .NET Conf 2023] (https://youtu.be/z1M-7Bms1Jg?si=xaF-RlmVN6tTz4VR)
+4. [EF Core 7 - Multiple Databases, DbContexts & Relationships (Entity Framework 7)] (https://youtu.be/mOML5Ry-81E?si=jDcjs-ea4nybbV0B)
+5. [How to Parse JSON with C# | Teach Me Tech] (https://youtu.be/XvsOnKvwhfQ?si=fJPSYYm0j6zsx9At)
+6. [ASP.NET Core Cookie Authentication (.NET 7 Minimal Apis C#)] (https://youtu.be/hw2B6SZj8y8?si=GYmFRfUcP9vWqsQ6)
+7. [Stay Fresh: .NET 7 Web API Refresh Tokens] (https://youtu.be/_F2hB4cWg-M?si=Rhoy0slYDAIJ0eb4)
+8. [ASP.NET Core Web API Authentication and Authorization with JWT (Json Web Token)] (https://youtu.be/kM1fPt1BcLc?si=mydyRvP9LxN6VVeq)
+9. [In Depth Entity Framework Migrations with Postgres] (https://youtu.be/DBI59f56L5I?si=lJlHaR-Z4ApjSE9T)
+10. [The .NET 8 Auth Changes You Must Know About!] (https://youtu.be/sZnu-TyaGNk?si=s1mjbzuz8v-xJYs5)
+11. [How to deploy .NET 8's New .NET Aspire Stack] (https://youtu.be/HYe6y1kBuGI?si=ebSPjbbtlHnO1an_)
+12. [Intro to the .NET CLI - How to Use It, Why We Need It, And More] (https://youtu.be/RQLzp2Z8-BE?si=mKOWYuOy21vzsHe5)
