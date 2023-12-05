@@ -1,7 +1,10 @@
 using AspireWithNextJS.WebAPI.Services;
 using AutoMapper;
+using Azure.AI.OpenAI;
 using Microsoft.AspNetCore.Mvc;
 using Microsoft.EntityFrameworkCore;
+using Microsoft.Extensions.Azure;
+using Microsoft.Extensions.Configuration;
 using Microsoft.OpenApi.Models;
 using ReactWithASP.Server.Data;
 using ReactWithASP.Server.Helpers;
@@ -33,6 +36,17 @@ builder.Services.AddSwaggerGen(option =>
     option.OperationFilter<AuthResponsesOperationFilter>();
 });
 
+var OpenAIKey = builder.Configuration.GetSection("OpenAIKey");
+var OpenAIProxyURL = builder.Configuration.GetSection("OpenAIProxyURL");
+var OpenAIDeploymentName = builder.Configuration.GetSection("OpenAIDeploymentName");
+
+System.Environment.SetEnvironmentVariable("OpenAIKey", OpenAIKey.Value);
+System.Environment.SetEnvironmentVariable("OpenAIProxyUrl", OpenAIProxyURL.Value);
+System.Environment.SetEnvironmentVariable("OpenAIDeploymentName", OpenAIDeploymentName.Value);
+
+var val = OpenAIKey;
+var val2 = OpenAIProxyURL;
+var val3 = OpenAIDeploymentName;
 // Add db context
 var dbConnection = builder.Configuration.GetConnectionString("DbString");
 var dbConnection2 = builder.Configuration.GetConnectionString("SupplyChainConnection");
@@ -45,6 +59,7 @@ builder.Services.AddDbContext<DataContext>(options =>
         options.UseNpgsql(dbConnection);
     }
 });
+
 
 builder.Services.AddDbContext<SupplyChainContext>(options =>
 {

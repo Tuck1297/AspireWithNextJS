@@ -7,26 +7,23 @@ using Microsoft.AspNetCore.Mvc;
 using Newtonsoft.Json;
 
 namespace AspireWithNextJS.WebAPI.Services
-{
-
-    
+{    
     public class AiServices
     {
-        
+
         public async Task<string> Summarize(dynamic tableData, string prompt)
         {
-
             string jsonString = JsonConvert.SerializeObject(tableData);
 
-            string proxyUrl = "PROXY URL GOES HERE";
-            string key = "OPENAI KEY GOES HERE";
-            string openAIDeploymentName = "gpt-3.5-turbo";
+            var key = Environment.GetEnvironmentVariable("OpenAIKey");;
+            var proxyUrl = Environment.GetEnvironmentVariable("OpenAIProxyUrl");
+            var openAIDeploymentName = Environment.GetEnvironmentVariable("OpenAIDeploymentName");
             //"gpt-3.5-turbo" <-- for general chats
             //"text-embedding-ada-002" <-- for embedding information
 
-            Uri proxyUri = new(proxyUrl + "/v1/api");
+            Uri proxyUri = new(proxyUrl);
 
-            AzureKeyCredential token = new(key + "/Tuck1297");
+            AzureKeyCredential token = new(key);
 
             OpenAIClient client = new OpenAIClient(proxyUri, token);
 
