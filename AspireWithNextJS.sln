@@ -1,0 +1,36 @@
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio Version 17
+VisualStudioVersion = 17.9.34310.174
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "AspireWithNextJS.AppHost", "ASpireWithNextJS.AppHost\AspireWithNextJS.AppHost.csproj", "{FD0DA073-0DFB-4A8B-A764-71ADBDE0116E}"
+EndProject
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "AspireWithNextJS.ServiceDefaults", "ASpireWithNextJS.ServiceDefaults\AspireWithNextJS.ServiceDefaults.csproj", "{E8CB0F89-54A1-4E28-BA97-2D4022A47F9D}"
+EndProject
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "AspireWithNextJS.WebAPI", "AspireWithNextJS.WebAPI\AspireWithNextJS.WebAPI.csproj", "{EEB5B2E4-3AB1-4F08-B168-E5786DC22DE7}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{FD0DA073-0DFB-4A8B-A764-71ADBDE0116E}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{FD0DA073-0DFB-4A8B-A764-71ADBDE0116E}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{FD0DA073-0DFB-4A8B-A764-71ADBDE0116E}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{FD0DA073-0DFB-4A8B-A764-71ADBDE0116E}.Release|Any CPU.Build.0 = Release|Any CPU
+		{E8CB0F89-54A1-4E28-BA97-2D4022A47F9D}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{E8CB0F89-54A1-4E28-BA97-2D4022A47F9D}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{E8CB0F89-54A1-4E28-BA97-2D4022A47F9D}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{E8CB0F89-54A1-4E28-BA97-2D4022A47F9D}.Release|Any CPU.Build.0 = Release|Any CPU
+		{EEB5B2E4-3AB1-4F08-B168-E5786DC22DE7}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{EEB5B2E4-3AB1-4F08-B168-E5786DC22DE7}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{EEB5B2E4-3AB1-4F08-B168-E5786DC22DE7}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{EEB5B2E4-3AB1-4F08-B168-E5786DC22DE7}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(ExtensibilityGlobals) = postSolution
+		SolutionGuid = {F73B497E-4197-4588-B182-DEFC280C1743}
+	EndGlobalSection
+EndGlobal

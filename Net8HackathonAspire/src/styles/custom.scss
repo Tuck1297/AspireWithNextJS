@@ -1,0 +1,26 @@
+$enable-shadows: true;
+
+$primary: #8e5251;
+$secondary: #ffab1c;
+$card-bg: white;
+
+$body-color: #3d2d2e;
+
+// $navbar-light-color: rgba(255, 172, 28, 0.55);
+$navbar-light-hover-color: rgba(255, 172, 28, 0.7);
+$navbar-light-active-color: rgba(255, 172, 28, 0.9);
+$navbar-light-disabled-color: rgba(255, 172, 28, 0.3);
+$navbar-light-toggler-border-color: rgba(255, 172, 28, 0.1);
+
+@import "../../node_modules/bootstrap/scss/bootstrap.scss";
+
+.btn-primary {
+    border: none;
+    color: #f7f3de;
+    padding: 0.5rem;
+}
+
+.page {
+    background: rgb(247,243,222);
+background: linear-gradient(180deg, rgba(247,243,222,0.1) 0%, rgba(255,171,28,0.3) 100%);
+}

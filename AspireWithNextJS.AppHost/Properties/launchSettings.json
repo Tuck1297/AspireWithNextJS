@@ -1,0 +1,16 @@
+{
+  "profiles": {
+    "https": {
+      "commandName": "Project",
+      "launchBrowser": true,
+      "environmentVariables": {
+        "ASPNETCORE_ENVIRONMENT": "Development",
+        "DOTNET_ENVIRONMENT": "Development",
+        "DOTNET_DASHBOARD_OTLP_ENDPOINT_URL": "https://localhost:16206"
+      },
+      "dotnetRunMessages": true,
+      "applicationUrl": "https://localhost:15223"
+    }
+  },
+  "$schema": "http://json.schemastore.org/launchsettings.json"
+}
