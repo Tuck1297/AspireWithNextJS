@@ -18,8 +18,8 @@ namespace AspireWithNextJS.WebAPI.Services
 
             string jsonString = JsonConvert.SerializeObject(tableData);
 
-            string proxyUrl = "";
-            string key = "";
+            string proxyUrl = "PROXY URL GOES HERE";
+            string key = "OPENAI KEY GOES HERE";
             string openAIDeploymentName = "gpt-3.5-turbo";
             //"gpt-3.5-turbo" <-- for general chats
             //"text-embedding-ada-002" <-- for embedding information
